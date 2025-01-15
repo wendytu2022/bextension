@@ -1,0 +1,15 @@
+{
+  "name": "Bextension",
+  "description": "B-ifying your web results",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "images/B_emoji.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}
